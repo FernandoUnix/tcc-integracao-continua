@@ -28,10 +28,10 @@ jobs:
           path: staging
       - name: Login to Heroku Container registry
         env:
-          HEROKU_API_KEY: ${{ env.HEROKU_API_KEY }}
+          HEROKU_API_KEY: 0105105f-b39d-4a27-b0e9-8b8fb6535e47
         run: heroku container:login
       - name: Build and push
         env:
-          HEROKU_API_KEY: ${{ env.HEROKU_API_KEY }}
+          HEROKU_API_KEY: 0105105f-b39d-4a27-b0e9-8b8fb6535e47
           HEROKU_APP_NAME: exemplo-integracao-continua
         run: heroku plugins:install java && heroku create --no-remote && heroku deploy:jar staging/exemplo_integracao_continua-0.0.1-SNAPSHOT.jar --app exemplo-integracao-continua
