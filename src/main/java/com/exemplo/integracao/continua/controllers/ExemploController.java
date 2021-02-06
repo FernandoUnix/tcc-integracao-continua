@@ -10,7 +10,7 @@ public class ExemploController {
     @GetMapping("/index")
     public String index(Model model) {
 
-        model.addAttribute("versao", "Versão 2");
+        model.addAttribute("versao", "Versão 3");
         return "index";
     }
 }
