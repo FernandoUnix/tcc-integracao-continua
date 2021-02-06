@@ -1,5 +1,7 @@
   name: PIPELINE
-on: push
+on:
+  push:
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,5 +33,5 @@ jobs:
       - name: Build and push
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          HEROKU_APP_NAME: exemplo_integracao_continua
+          HEROKU_APP_NAME: exemplo-integracao-continua
         run: heroku plugins:install java && heroku create --no-remote && heroku deploy:jar staging/exemplo_integracao_continua-0.0.1-SNAPSHOT.jar --app exemplo-integracao-continua
