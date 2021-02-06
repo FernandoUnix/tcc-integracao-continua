@@ -24,7 +24,7 @@ jobs:
       - name: Upload math result for job
         uses: actions/upload-artifact@v1
         with:
-          name: exemplo-integracao-continua
+          name: exemplo_integracao_continua
           path: staging
       - name: Login to Heroku Container registry
         env:
