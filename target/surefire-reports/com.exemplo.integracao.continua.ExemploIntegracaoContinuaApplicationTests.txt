@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.exemplo.integracao.continua.ExemploIntegracaoContinuaApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.751 s - in com.exemplo.integracao.continua.ExemploIntegracaoContinuaApplicationTests
